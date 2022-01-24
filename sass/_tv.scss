@@ -1,0 +1,93 @@
+/* SALUTE TV SALUTE TV SALUTE TV SALUTE TV  */
+/* SALUTE TV SALUTE TV SALUTE TV SALUTE TV  */
+/* SALUTE TV SALUTE TV SALUTE TV SALUTE TV  */
+
+/* Header */
+
+nav {background-color: rgb(27, 26, 26) !important;
+    .navbar-nav {
+        font-family:$fontTitulos;
+        font-size: 22px;
+    }
+    .nav-item {
+        padding: 0px 10px;
+    }
+    .nav-link:hover {
+        color:$colorPrincipal !important;
+    }
+}
+
+/* Main */
+
+#main{
+    h1 {
+        @include tituloPrincipal();
+    }
+    .textoPrincipal {
+        font-family:$fontSecundaria;
+        font-size: 25px;
+        color:$colorSecundario;
+        text-align: center;
+        margin:100px 0;
+        color:$colorPrincipal;
+    }
+    .section1 {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 0px;
+        flex-wrap: wrap-reverse;
+        .texto2 {
+        color:$colorSecundario;
+        font-size:$size3;
+        text-align: center;
+        margin:120px 0;
+        font-family:$fontTitulos;
+        padding: 0px 50px;
+    }
+    }
+    .section2 {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top:50px;
+        flex-wrap: wrap;
+        .texto3 {
+        color: rgb(255, 255, 255);
+        font-size:$size3;
+        font-family:$fontTitulos;
+        text-align: center;
+        margin:120px 0;
+        padding: 0px 100px;
+    }
+    }
+}
+
+/* Footer */
+
+#footer {
+    margin-top: 100px;
+    background-color: rgb(0, 0, 0);
+    height: 150px;
+    .redes {
+        display: flex;
+        justify-content: center;
+    }
+    button {
+        width: 100px;
+        height: 50px;
+        background-color:black;
+        color:$colorSecundario;
+        border: none;
+        font-size:$size3;
+        a{
+        color:$colorPrincipal;
+        &:hover {color:$colorPrincipal}
+    }
+    .copyright {
+    display: flex;
+    justify-content: center;
+    margin:50px 0;
+    color:$colorSecundario
+} 
+}
+}
+ 

@@ -1,0 +1,123 @@
+/* CATALOGO CATALOGO CATALOGO */
+/* CATALOGO CATALOGO CATALOGO */
+
+/* Header */
+
+nav {background-color: rgb(27, 26, 26) !important;
+    .navbar-nav {
+        font-family:$fontTitulos;
+        font-size: 22px;
+    }
+
+.nav-item {
+    padding: 0px 10px;
+}
+
+.nav-link:hover {
+    color:$colorPrincipal !important;
+}
+}
+
+
+
+
+/* MAIN MAIN MAIN MAIN */
+h1 {@include tituloPrincipal();
+    margin-bottom: 50px;
+    &:hover {
+        color:$colorSecundario
+    }
+}
+
+#main {
+    .card{background-color: rgb(20, 20, 20);
+    }
+    .card-title{
+        color:$colorSecundario;
+        font-family:$fontSecundaria;
+    }
+    .card-text {
+        color:$colorSecundario;
+        font-family:$fontPrincipal;
+    }
+    .titulo2 {
+        @include tituloSecundario()
+    }
+    .section2 {
+        margin-top: px;
+        .card{
+            .card-title{
+                color:$colorSecundario;
+                .card-text{
+                    color:$colorSecundario;
+                }
+            }
+        }  
+    }
+  }
+
+
+/* Footer */
+
+#footer {
+    margin-top: 100rem;
+    background-color: black;
+    height: 150px;
+    .redes {
+        display: flex;
+        justify-content: center;
+    }
+    button {
+        width: 100px;
+        height: 50px;
+        background-color:black;
+        color: white;
+        border: none;
+        font-size: 30px;
+    }
+    button a  {
+        color:$colorSecundario;
+        &:hover {color:$colorPrincipal;}
+    }
+    .copyright {
+        display: flex;
+        justify-content: center;
+        margin:50px 0;
+        color:$colorSecundario
+    }
+}
+@media only screen and (min-width:320px) and (max-width:480px) {
+    h1 {
+        font-size: 40px !important;
+    }
+    .card{
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width:768px){
+    h1 {
+        font-size: 50px !important;
+    }
+    .card{
+        padding: 20px;
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1000px) {
+    .card {
+        margin: 50px;
+        height: 800px;
+        margin: 60px;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (min-width:1000px) and (max-width:1440px){
+    .card {
+        width: 400px;
+        margin: 50px auto;}
+}
+
+

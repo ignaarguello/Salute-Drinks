@@ -1,0 +1,528 @@
+/* INDEX INDEX */
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+}
+
+/* Header */
+nav {
+  background-color: #1b1a1a !important;
+}
+
+nav .navbar-nav {
+  font-family: Amatic SC, cursive;
+  font-size: 22px;
+}
+
+nav .nav-item {
+  padding: 0px 10px;
+}
+
+nav .nav-link:hover {
+  color: #621d62 !important;
+}
+
+/* MAIN MAIN MAIN MAIN */
+/* Titulo */
+h1 {
+  text-align: center;
+  color: #621d62;
+  font-size: 70px;
+  font-family: Amatic SC, cursive;
+  margin-top: 150px;
+}
+
+h1:hover {
+  color: #cfcbcb;
+}
+
+/* Carousel */
+.mainCarousel {
+  margin-top: 80px;
+}
+
+.control {
+  margin-top: 400px;
+}
+
+/* Titulo y Cards */
+.titulo2 {
+  text-align: center;
+  color: #621d62;
+  font-size: 55px;
+  font-family: Amatic SC, cursive;
+  margin-top: 150px;
+}
+
+.titulo2:hover {
+  color: #cfcbcb;
+}
+
+.contenedorCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 150px;
+}
+
+.contenedorCards .card {
+  border-radius: 10px;
+}
+
+.contenedorCards .card .btn {
+  margin: 20px 45px;
+}
+
+.contenedorCards .card .bt2 {
+  margin: 50px 60px;
+}
+
+.contenedorCards .card .bt3 {
+  margin: 70px 75px;
+}
+
+/* Footer */
+#footer {
+  margin-top: 100px;
+  background-color: black;
+  height: 150px;
+}
+
+#footer .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer button {
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 30px;
+}
+
+#footer button a {
+  color: white;
+}
+
+#footer button a:hover {
+  color: #621d62;
+}
+
+#footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
+  color: #cfcbcb;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .card {
+    width: auto !important;
+  }
+  .btn {
+    margin: 50px 115px;
+  }
+  h1 {
+    font-size: 40px;
+    color: #621d62;
+  }
+  .titulo2 {
+    font-size: 40px;
+  }
+  .control {
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .card {
+    width: auto !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 930px) {
+  .card {
+    width: 16rem !important;
+  }
+}
+
+/* CATALOGO CATALOGO CATALOGO */
+/* CATALOGO CATALOGO CATALOGO */
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+}
+
+/* Header */
+nav {
+  background-color: #1b1a1a !important;
+}
+
+nav .navbar-nav {
+  font-family: Amatic SC, cursive;
+  font-size: 22px;
+}
+
+nav .nav-item {
+  padding: 0px 10px;
+}
+
+nav .nav-link:hover {
+  color: #621d62 !important;
+}
+
+/* MAIN MAIN MAIN MAIN */
+h1 {
+  text-align: center;
+  color: #621d62;
+  font-size: 70px;
+  font-family: Amatic SC, cursive;
+  margin-top: 150px;
+  margin-bottom: 125px;
+}
+
+h1:hover {
+  color: #cfcbcb;
+}
+
+#main {
+  margin-top: 200px;
+}
+
+#main .titulo2 {
+  text-align: center;
+  color: #621d62;
+  font-size: 55px;
+  font-family: Amatic SC, cursive;
+  margin-top: 150px;
+}
+
+#main .section2 {
+  margin-top: 100px;
+}
+
+/* Footer */
+#footer {
+  margin-top: 100px;
+  background-color: black;
+  height: 150px;
+}
+
+#footer .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer button {
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 30px;
+}
+
+#footer button a {
+  color: #cfcbcb;
+}
+
+#footer button a:hover {
+  color: #621d62;
+}
+
+#footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
+  color: #cfcbcb;
+}
+
+@media only screen and (min-width: 320px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+/* SALUTE TV SALUTE TV SALUTE TV SALUTE TV  */
+/* SALUTE TV SALUTE TV SALUTE TV SALUTE TV  */
+/* SALUTE TV SALUTE TV SALUTE TV SALUTE TV  */
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+}
+
+/* Header */
+nav {
+  background-color: #1b1a1a !important;
+}
+
+nav .navbar-nav {
+  font-family: Amatic SC, cursive;
+  font-size: 22px;
+}
+
+nav .nav-item {
+  padding: 0px 10px;
+}
+
+nav .nav-link:hover {
+  color: #621d62 !important;
+}
+
+/* Main */
+#main h1 {
+  text-align: center;
+  color: #621d62;
+  font-size: 70px;
+  font-family: Amatic SC, cursive;
+  margin-top: 150px;
+}
+
+#main .textoPrincipal {
+  font-family: Amatic SC, cursive;
+  font-size: 20px;
+  color: #cfcbcb;
+  text-align: center;
+  margin: 150px 0;
+}
+
+#main .section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#main .texto2 {
+  color: #cfcbcb;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 200px;
+  font-family: Amatic SC, cursive;
+  padding: 0px 50px;
+}
+
+#main .section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 150px;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+#main .texto3 {
+  color: white;
+  font-size: 30px;
+  font-family: Amatic SC, cursive;
+  text-align: center;
+  margin-top: 200px;
+  padding: 0px 100px;
+}
+
+/* Footer */
+#footer {
+  margin-top: 100px;
+  background-color: black;
+  height: 150px;
+}
+
+#footer .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer button {
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: #cfcbcb;
+  border: none;
+  font-size: 30px;
+}
+
+#footer button a {
+  color: #621d62;
+}
+
+#footer button a:hover {
+  color: #621d62;
+}
+
+#footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
+  color: #cfcbcb;
+}
+
+/* ZONAS ZONAS ZONAS */
+/* ZONAS ZONAS ZONAS */
+/* ZONAS ZONAS ZONAS */
+/* ZONAS ZONAS ZONAS */
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+}
+
+/* Header */
+nav {
+  background-color: #1b1a1a !important;
+}
+
+nav .navbar-nav {
+  font-family: Amatic SC, cursive;
+  font-size: 22px;
+}
+
+nav .nav-item {
+  padding: 0px 10px;
+}
+
+nav .nav-link:hover {
+  color: #621d62 !important;
+}
+
+/* MAIN MAIN MAIN MAIN */
+/* Titulo */
+#main h1 {
+  text-align: center;
+  color: #621d62;
+  font-size: 70px;
+  font-family: Amatic SC, cursive;
+  margin-top: 150px;
+  font-size: 65px;
+}
+
+#main .section1 {
+  margin-top: 100px;
+}
+
+#main .section2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #621d62;
+  font-size: 30px;
+  font-family: Amatic SC, cursive;
+  margin-top: 100px;
+}
+
+#main .section2 ul li {
+  padding: 0px 50px;
+}
+
+#main .section2 ul li:hover {
+  color: #cfcbcb;
+}
+
+/* Footer */
+#footer {
+  margin-top: 100px;
+  background-color: black;
+  height: 150px;
+}
+
+#footer .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer button {
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: #cfcbcb;
+  border: none;
+  font-size: 30px;
+}
+
+#footer button a {
+  color: #cfcbcb;
+}
+
+#footer button a:hover {
+  color: #621d62;
+}
+
+#footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
+  color: #cfcbcb;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1000px) {
+  .section2 ul li {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

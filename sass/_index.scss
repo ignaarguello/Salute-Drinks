@@ -1,0 +1,152 @@
+/* INDEX INDEX */
+
+/* Header */
+
+nav {
+    background-color: rgb(27, 26, 26) !important;
+    .navbar-nav {
+        font-family:$fontTitulos;
+        font-size: 22px;
+    }
+    .nav-item {
+        padding: 0px 10px;
+    }
+    .nav-link:hover{
+        color:$colorPrincipal !important;
+    }
+}
+
+
+             
+
+/* MAIN MAIN MAIN MAIN */
+
+/* Titulo */
+
+h1 {
+    @include tituloPrincipal();
+    &:hover {
+        color: $colorSecundario !important;
+    }
+}
+
+/* Carousel */
+
+.mainCarousel {
+    margin-top:80px;
+}
+.control {
+    margin-top:400px;
+}
+
+
+/* Titulo y Cards */
+
+.titulo2 {
+    @include tituloSecundario();
+    &:hover {
+        color:$colorSecundario !important
+    }
+}
+
+
+
+.contenedorCards {display: flex;
+                  justify-content: space-evenly;
+                  margin-top: 150px;
+                  .card {
+                      border-radius: 10px;
+                      background-color: rgb(37, 35, 35);
+                      .card-title{
+                          color:$colorPrincipal !important;
+                          font-family:$fontSecundaria;
+                          line-height: 150px;
+                          font-size: 30px;
+                        }
+                      .card-text{
+                          color:white;
+                          font-family:$fontPrincipal;
+                          font-size: 15px;
+                        }
+                      .btn {
+                          margin: 20px 55px;
+                          font-family: 'Comfortaa', cursive;
+                        }
+                        .bt2 {
+                            margin: 50px 60px;
+                        }
+                        .bt3 {
+                            margin: 70px 75px;
+                        }
+                    }
+                }
+
+
+/* Footer */
+
+#footer {
+    margin-top: 100px;
+    background-color: black;
+    height: 150px;
+    .redes {
+        display: flex;
+        justify-content: center;
+    }
+    button {
+        width: 100px;
+        height: 50px;
+        background-color:black;
+        color: white;
+        border: none;
+        font-size: 30px;
+    }
+    button a  {
+        color: white;
+        &:hover{color:$colorPrincipal;}
+    }
+    .copyright {
+        display: flex;
+        justify-content: center;
+        margin:50px 0;
+        color:$colorSecundario
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:576px) {
+.titulo2{
+    font-size: 40px !important;
+}
+    .card {width: auto !important;}
+    .btn {
+        margin: 50px 15px !important;
+        padding:10px 100px;
+    }
+    h1 {font-size:50px; 
+        color:$colorPrincipal !important;}
+    .titulo2 {font-size: 40px;}
+    .control {margin-top:60px;}
+    }
+
+@media only screen and (min-width:576px) and (max-width:767px) {
+
+    .card {
+        width: auto !important;
+    }
+    .btn {
+        margin: 50px 150px !important;
+        padding: 10px 100px;
+    }
+
+    
+}
+
+@media only screen and (min-width:768px) and (max-width:1440px) {
+
+    .card {
+        .card-title{
+            line-height: 70px!important;
+        }
+        width: 16rem !important;
+        line-height: 15px !important;
+    }
+}

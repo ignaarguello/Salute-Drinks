@@ -1,0 +1,600 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
+/* INDEX INDEX */
+/* Header */
+nav {
+  background-color: #1b1a1a !important;
+}
+
+nav .navbar-nav {
+  font-family: Amatic SC, cursive;
+  font-size: 22px;
+}
+
+nav .nav-item {
+  padding: 0px 10px;
+}
+
+nav .nav-link:hover {
+  color: #621d62 !important;
+}
+
+/* MAIN MAIN MAIN MAIN */
+/* Titulo */
+h1 {
+  text-align: center;
+  color: #621d62;
+  font-size: 70px;
+  font-family: Amatic SC, cursive;
+  margin-top: 150px;
+}
+
+h1:hover {
+  color: #cfcbcb !important;
+}
+
+/* Carousel */
+.mainCarousel {
+  margin-top: 80px;
+}
+
+.control {
+  margin-top: 400px;
+}
+
+/* Titulo y Cards */
+.titulo2 {
+  text-align: center;
+  color: #621d62;
+  font-size: 55px;
+  font-family: Amatic SC, cursive;
+  margin-top: 150px;
+}
+
+.titulo2:hover {
+  color: #cfcbcb !important;
+}
+
+.contenedorCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 150px;
+}
+
+.contenedorCards .card {
+  border-radius: 10px;
+  background-color: #252323;
+}
+
+.contenedorCards .card .card-title {
+  color: #621d62 !important;
+  font-family: "Bad Script", cursive;
+  line-height: 150px;
+  font-size: 30px;
+}
+
+.contenedorCards .card .card-text {
+  color: white;
+  font-family: "Comfortaa", cursive;
+  font-size: 15px;
+}
+
+.contenedorCards .card .btn {
+  margin: 20px 55px;
+  font-family: 'Comfortaa', cursive;
+}
+
+.contenedorCards .card .bt2 {
+  margin: 50px 60px;
+}
+
+.contenedorCards .card .bt3 {
+  margin: 70px 75px;
+}
+
+/* Footer */
+#footer {
+  margin-top: 100px;
+  background-color: black;
+  height: 150px;
+}
+
+#footer .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer button {
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 30px;
+}
+
+#footer button a {
+  color: white;
+}
+
+#footer button a:hover {
+  color: #621d62;
+}
+
+#footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
+  color: #cfcbcb;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .titulo2 {
+    font-size: 40px !important;
+  }
+  .card {
+    width: auto !important;
+  }
+  .btn {
+    margin: 50px 15px !important;
+    padding: 10px 100px;
+  }
+  h1 {
+    font-size: 50px;
+    color: #621d62 !important;
+  }
+  .titulo2 {
+    font-size: 40px;
+  }
+  .control {
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .card {
+    width: auto !important;
+  }
+  .btn {
+    margin: 50px 150px !important;
+    padding: 10px 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+  .card {
+    width: 16rem !important;
+    line-height: 15px !important;
+  }
+  .card .card-title {
+    line-height: 70px !important;
+  }
+}
+
+/* CATALOGO CATALOGO CATALOGO */
+/* CATALOGO CATALOGO CATALOGO */
+/* Header */
+nav {
+  background-color: #1b1a1a !important;
+}
+
+nav .navbar-nav {
+  font-family: Amatic SC, cursive;
+  font-size: 22px;
+}
+
+nav .nav-item {
+  padding: 0px 10px;
+}
+
+nav .nav-link:hover {
+  color: #621d62 !important;
+}
+
+/* MAIN MAIN MAIN MAIN */
+h1 {
+  text-align: center;
+  color: #621d62;
+  font-size: 70px;
+  font-family: Amatic SC, cursive;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+h1:hover {
+  color: #cfcbcb;
+}
+
+#main .card {
+  background-color: #141414;
+}
+
+#main .card-title {
+  color: #cfcbcb;
+  font-family: "Bad Script", cursive;
+}
+
+#main .card-text {
+  color: #cfcbcb;
+  font-family: "Comfortaa", cursive;
+}
+
+#main .titulo2 {
+  text-align: center;
+  color: #621d62;
+  font-size: 55px;
+  font-family: Amatic SC, cursive;
+  margin-top: 150px;
+}
+
+#main .section2 {
+  margin-top: px;
+}
+
+#main .section2 .card .card-title {
+  color: #cfcbcb;
+}
+
+#main .section2 .card .card-title .card-text {
+  color: #cfcbcb;
+}
+
+/* Footer */
+#footer {
+  margin-top: 100rem;
+  background-color: black;
+  height: 150px;
+}
+
+#footer .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer button {
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 30px;
+}
+
+#footer button a {
+  color: #cfcbcb;
+}
+
+#footer button a:hover {
+  color: #621d62;
+}
+
+#footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
+  color: #cfcbcb;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  h1 {
+    font-size: 40px !important;
+  }
+  .card {
+    margin: 20px 0;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  h1 {
+    font-size: 50px !important;
+  }
+  .card {
+    padding: 20px;
+    margin: 20px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .card {
+    margin: 50px;
+    height: 800px;
+    margin: 60px;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1440px) {
+  .card {
+    width: 400px;
+    margin: 50px auto;
+  }
+}
+
+/* SALUTE TV SALUTE TV SALUTE TV SALUTE TV  */
+/* SALUTE TV SALUTE TV SALUTE TV SALUTE TV  */
+/* SALUTE TV SALUTE TV SALUTE TV SALUTE TV  */
+/* Header */
+nav {
+  background-color: #1b1a1a !important;
+}
+
+nav .navbar-nav {
+  font-family: Amatic SC, cursive;
+  font-size: 22px;
+}
+
+nav .nav-item {
+  padding: 0px 10px;
+}
+
+nav .nav-link:hover {
+  color: #621d62 !important;
+}
+
+/* Main */
+#main h1 {
+  text-align: center;
+  color: #621d62;
+  font-size: 70px;
+  font-family: Amatic SC, cursive;
+  margin-top: 150px;
+}
+
+#main .textoPrincipal {
+  font-family: "Bad Script", cursive;
+  font-size: 25px;
+  color: #cfcbcb;
+  text-align: center;
+  margin: 100px 0;
+  color: #621d62;
+}
+
+#main .section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 0px;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+#main .section1 .texto2 {
+  color: #cfcbcb;
+  font-size: 30px;
+  text-align: center;
+  margin: 120px 0;
+  font-family: Amatic SC, cursive;
+  padding: 0px 50px;
+}
+
+#main .section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#main .section2 .texto3 {
+  color: white;
+  font-size: 30px;
+  font-family: Amatic SC, cursive;
+  text-align: center;
+  margin: 120px 0;
+  padding: 0px 100px;
+}
+
+/* Footer */
+#footer {
+  margin-top: 100px;
+  background-color: black;
+  height: 150px;
+}
+
+#footer .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer button {
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: #cfcbcb;
+  border: none;
+  font-size: 30px;
+}
+
+#footer button a {
+  color: #621d62;
+}
+
+#footer button a:hover {
+  color: #621d62;
+}
+
+#footer button .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
+  color: #cfcbcb;
+}
+
+/* ZONAS ZONAS ZONAS */
+/* ZONAS ZONAS ZONAS */
+/* ZONAS ZONAS ZONAS */
+/* ZONAS ZONAS ZONAS */
+/* Header */
+nav {
+  background-color: #1b1a1a !important;
+}
+
+nav .navbar-nav {
+  font-family: Amatic SC, cursive;
+  font-size: 22px;
+}
+
+nav .nav-item {
+  padding: 0px 10px;
+}
+
+nav .nav-link:hover {
+  color: #621d62 !important;
+}
+
+/* MAIN MAIN MAIN MAIN */
+/* Titulo */
+#main h1 {
+  text-align: center;
+  color: #621d62;
+  font-size: 70px;
+  font-family: Amatic SC, cursive;
+  margin-top: 150px;
+  font-size: 65px;
+}
+
+#main .section1 {
+  margin: 100px 0;
+}
+
+#main .tituloZonas {
+  color: #cfcbcb;
+  font-family: "Bad Script", cursive;
+  text-align: center;
+  font-size: 25px;
+}
+
+#main .section2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #621d62;
+  font-size: 30px;
+  font-family: Amatic SC, cursive;
+  margin: 100px auto;
+}
+
+#main .section2 ul li {
+  padding: 0px 0px;
+  list-style: none;
+}
+
+#main .section2 ul li:hover {
+  color: #cfcbcb;
+}
+
+/* Footer */
+#footer {
+  margin-top: 100px;
+  background-color: black;
+  height: 150px;
+}
+
+#footer .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer button {
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: #cfcbcb;
+  border: none;
+  font-size: 30px;
+}
+
+#footer button a {
+  color: #cfcbcb;
+}
+
+#footer button a:hover {
+  color: #621d62;
+}
+
+#footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
+  color: #cfcbcb;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1000px) {
+  .section2 ul li {
+    font-size: 20px;
+    padding: 0 3px !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .section2 ul li {
+    font-size: 25px;
+    padding: 0 20px !important;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1440px) {
+  .section2 ul li {
+    font-size: 30px;
+    padding: 0 70px !important;
+  }
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+}
+/*# sourceMappingURL=estilos.css.map */

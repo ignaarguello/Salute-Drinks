@@ -1,0 +1,113 @@
+/* ZONAS ZONAS ZONAS */
+/* ZONAS ZONAS ZONAS */
+/* ZONAS ZONAS ZONAS */
+/* ZONAS ZONAS ZONAS */
+
+/* Header */
+
+nav {background-color: rgb(27, 26, 26) !important;
+    .navbar-nav {
+        font-family:$fontTitulos;
+        font-size: 22px;
+    }
+    .nav-item {
+        padding: 0px 10px;
+    }
+    .nav-link:hover {color:$colorPrincipal !important;}
+}
+
+/* MAIN MAIN MAIN MAIN */
+
+/* Titulo */
+
+#main{
+    h1{  
+    @include tituloPrincipal();
+    font-size: 65px;
+}
+.section1 {
+    margin:100px 0;
+}
+
+.tituloZonas{color:$colorSecundario;
+            font-family:$fontSecundaria;
+            text-align: center;
+            font-size: 25px;}
+
+.section2{
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color:$colorPrincipal;
+        font-size: 30px;
+        font-family:$fontTitulos;
+        margin:100px auto;
+    & li {
+        padding: 0px 0px;
+        list-style: none;
+          &:hover{color: $colorSecundario;}
+        }
+    }
+}  
+
+}
+/* Footer */
+
+#footer {
+    margin-top: 100px;
+    background-color: black;
+    height: 150px;
+    .redes {
+        display: flex;
+        justify-content: center;
+}
+button {
+    width: 100px;
+    height: 50px;
+    background-color:black;
+    color:$colorSecundario;
+    border: none;
+    font-size:$size3
+}
+button a  {
+    color:$colorSecundario;
+    &:hover {color:$colorPrincipal;}
+}
+.copyright {
+    display: flex;
+    justify-content: center;
+    margin:50px 0;
+    color:$colorSecundario;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:1000px) {
+
+.section2{
+    ul{
+        li{font-size: 20px;
+           padding: 0 3px !important;}
+    }
+}
+}
+
+@media only screen and (min-width:600px) and (max-width:900px) {
+
+    .section2{
+        ul{
+            li{font-size: 25px;
+               padding: 0 20px !important;}
+        }
+    }
+    }
+
+    @media only screen and (min-width:900px) and (max-width:1440px) {
+
+        .section2{
+            ul{
+                li{font-size: 30px;
+                   padding: 0 70px !important;}
+            }
+        }
+        }
