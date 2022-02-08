@@ -12,31 +12,21 @@ nav {
         padding: 0px 10px;
     }
     .nav-link:hover{
-        color:$colorPrincipal !important;
+        color:$colorPrincipal!important;
     }
 }
 
-
-             
-
-/* MAIN MAIN MAIN MAIN */
-
-/* Titulo */
-
-h1 {
-    @include tituloPrincipal();
-    &:hover {
-        color: $colorSecundario !important;
-    }
-}
 
 /* Carousel */
 
 .mainCarousel {
     margin-top:80px;
 }
-.control {
-    margin-top:400px;
+.banner{
+    width:100%;
+}
+.carousel-caption{
+    margin-top: 500px
 }
 
 
@@ -44,43 +34,16 @@ h1 {
 
 .titulo2 {
     @include tituloSecundario();
+    font-size: 55px;
     &:hover {
-        color:$colorSecundario !important
+        color:$colorSecundario;
     }
 }
 
-
-
-.contenedorCards {display: flex;
-                  justify-content: space-evenly;
-                  margin-top: 150px;
-                  .card {
-                      border-radius: 10px;
-                      background-color: rgb(37, 35, 35);
-                      .card-title{
-                          color:$colorPrincipal !important;
-                          font-family:$fontSecundaria;
-                          line-height: 150px;
-                          font-size: 30px;
-                        }
-                      .card-text{
-                          color:white;
-                          font-family:$fontPrincipal;
-                          font-size: 15px;
-                        }
-                      .btn {
-                          margin: 20px 55px;
-                          font-family: 'Comfortaa', cursive;
-                        }
-                        .bt2 {
-                            margin: 50px 60px;
-                        }
-                        .bt3 {
-                            margin: 70px 75px;
-                        }
-                    }
-                }
-
+//Titulo Final
+.tituloFinal{
+    @include titulo__previoFooter
+}
 
 /* Footer */
 
@@ -112,41 +75,178 @@ h1 {
     }
 }
 
-@media only screen and (min-width:320px) and (max-width:576px) {
-.titulo2{
-    font-size: 40px !important;
-}
-    .card {width: auto !important;}
-    .btn {
-        margin: 50px 15px !important;
-        padding:10px 100px;
+//Primer Media Query 
+
+@media only screen and (min-width:320px){
+    //H1
+    .h1_index{
+        @include tituloPrincipal;
+        font-size:47px;
     }
-    h1 {font-size:50px; 
-        color:$colorPrincipal !important;}
-    .titulo2 {font-size: 40px;}
-    .control {margin-top:60px;}
+    //Carousel
+    .banner {
+        height: 350px;
     }
-
-@media only screen and (min-width:576px) and (max-width:767px) {
-
-    .card {
-        width: auto !important;
+    //Acerca de nosotros
+    .titulo2{
+        font-size:40px;
     }
-    .btn {
-        margin: 50px 150px !important;
-        padding: 10px 100px;
-    }
-
-    
-}
-
-@media only screen and (min-width:768px) and (max-width:1440px) {
-
-    .card {
-        .card-title{
-            line-height: 70px!important;
+    //Cards
+    .card{
+        height: 925px;
+        margin: 80px 0px;
+        border:none;
+        background-color: $backgroundCards;
+        .card-body{
+            background-color:$backgroundCards;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
         }
-        width: 16rem !important;
-        line-height: 15px !important;
+            .card-title{
+                color:$colorPrincipal;
+                font-family:$fontSecundaria;
+                font-size: 33px;
+                margin: 25px 0;
+                }
+                .card-text{
+                color:white;
+                font-family:$fontPrincipal;
+                font-size: 16px;
+                padding-top: 20px;
+                line-height:25px;}
+            .card-img-top{
+                  height: 600px;
+              }
+        .btn{
+            margin: 55px 0px;
+            width: 200px;
+        }
     }
 }
+
+
+//Segunda Media Query 
+
+@media only screen and (min-width:425px){
+    //H1
+    .h1_index{
+        font-size: 60px;
+    }
+    //Carousel
+    .banner{
+        height:500px;
+    }
+    //Segundo Titulo
+    .titulo2{
+        font-size: 50px;
+    }
+    //Cards
+    .card {
+            border-radius: 10px;
+            background-color: rgba(184, 163, 163, 0.157);
+            height: 1100px;
+            .card-img-top{
+            height: 700px;
+        }
+        .btn{
+            margin: 100px 0;
+        }
+    }
+
+}
+
+//Tercer Media Query
+
+@media only screen and (min-width:768px){
+    //H1
+    .h1_index{
+        font-size: 65px;
+    }
+    //Carousel
+    .banner{
+        height: 550px;
+    }
+    //Segundo Titulo
+    .titulo2{
+        font-size:56px;
+    }
+    //Cards
+    .contenedorCards{
+        display: flex;
+        justify-content: center;
+        .card{
+            width: 500px;
+            height: 88rem;
+            padding: 10px;
+            .card-title{
+                margin: 50px 0;
+            }
+            .card-img-top{
+                height: 850px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:975px){
+    //Carousel
+    .banner{
+        height: 650px;
+    }
+    //Cards
+    .contenedorCards{
+        width:auto;
+        display: flex;
+        justify-content: space-around;
+        .card{
+            width: 300px;
+            transform: scale(1);
+            transition: all 1.2s ease;
+            &:hover{
+            transform: scale(1.1);
+        }
+        .card-img-top{
+            height: 600px !important;
+        }
+            .card-title{
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+//Cuarta Media Query
+
+@media only screen and (min-width:1440px){
+    //H1
+    .h1_index{
+        font-size: 75px;
+        &:hover{
+            color:$colorSecundario;
+        }
+    }
+    //Carousel
+    .banner{
+        height: 700px;
+    }
+    //Cards
+    .card{
+        width: 400px !important;
+        height: 75rem !important;
+        margin-bottom: 200px;
+        transform: scale(1);
+        transition: all 1.2s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+        .card-img-top{
+            height: 600px !important;
+        }
+    }
+}
+
+
+

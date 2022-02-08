@@ -15,52 +15,50 @@ nav {background-color: rgb(27, 26, 26) !important;
 
 .nav-link:hover {
     color:$colorPrincipal !important;
-}
-}
+}}
 
 
 
 
-/* MAIN MAIN MAIN MAIN */
-h1 {@include tituloPrincipal();
+/* MAIN*/
+.h1__catalogo {@include tituloPrincipal();
     margin-bottom: 50px;
     &:hover {
         color:$colorSecundario
     }
 }
 
-#main {
-    .card{background-color: rgb(20, 20, 20);
+.tituloFinal{
+        @include titulo__previoFooter
     }
-    .card-title{
-        color:$colorSecundario;
-        font-family:$fontSecundaria;
-    }
-    .card-text {
-        color:$colorSecundario;
-        font-family:$fontPrincipal;
+    .secFinal{
+        height: 170px;
+        background-image: url(../images/PortadaBanner.jpg);
+        background-position: center;
+        background-size: cover;
+        
     }
     .titulo2 {
         @include tituloSecundario()
     }
     .section2 {
         margin-top: px;
-        .card{
-            .card-title{
+        .cardCatalogo{
+            .card-titleCat{
                 color:$colorSecundario;
-                .card-text{
+                .card-textCat{
                     color:$colorSecundario;
                 }
             }
         }  
     }
-  }
 
 
-/* Footer */
+
+/*  Footer */
 
 #footer {
-    margin-top: 100rem;
+    margin-top: 10rem;
     background-color: black;
     height: 150px;
     .redes {
@@ -86,38 +84,138 @@ h1 {@include tituloPrincipal();
         color:$colorSecundario
     }
 }
-@media only screen and (min-width:320px) and (max-width:480px) {
-    h1 {
-        font-size: 40px !important;
+
+//Primer Media Query
+
+@media only screen and (min-width:320px) and (max-width:425px){
+    .h1__catalogo{
+        font-size: 43px;
     }
-    .card{
-        margin: 20px 0;
+    .cardCatalogo{
+        margin: 70px 0px;
+        .card-img-centerCat{
+            height: 500px;
+            width: 100%;
+        }
+        .card-bodyCat{
+            padding:30px;
+            .card-titleCat{
+                color:$colorPrincipal;
+                font-family:$fontPrincipal;
+                font-size: 25px;
+                margin: 15px;
+            }
+            .card-textCat {
+                color:$colorSecundario;
+                font-size: 15px;
+                font-family:$fontPrincipal;
+                line-height: 35px;
+                strong{
+                    &.precio{
+                        font-size:22px;
+                        color: $colorPrincipal;
+                    }
+                }
+             }
+            }
+        }
+        .secFinal{
+            background-position:center;
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+//Segunda Media Query
+
+@media only screen and (min-width:425px){
+    .h1__catalogo{
+        font-size: 55px;
+    }
+    .cardCatalogo{
+        margin: 70px 0px;
+        .card-img-centerCat{
+            height: 600px;
+            width: 100%;
+        }
+        .card-bodyCat{
+            padding:30px;
+            .card-titleCat{
+                color:$colorPrincipal;
+                font-family:$fontPrincipal;
+                font-size: 25px;
+                margin: 15px;
+            }
+            .card-textCat {
+                color:$colorSecundario;
+                font-size: 15px;
+                font-family:$fontPrincipal;
+                line-height: 35px;
+                strong{
+                    &.precio{
+                        font-size:22px;
+                        color: $colorPrincipal;
+                    }
+                }
+             }
+            }
+        }
+        .secFinal{
+            background-position:center;
+            background-size:cover;
+            background-repeat: no-repeat;
+            width:100%;
+            
+            margin: 0px 0px 30px 0px;
+        }
+    }
+
+ //Tercer Media Query
+
+@media only screen and (min-width:768px){
+    .h1__catalogo{
+        font-size: 65px;
+    }
+    .cardCatalogo{
+        width: 320px;
+        height: 150px;
+        margin: 50px auto 700px auto;
+        .card-img-centerCat{
+            height: 450px;
+            border-radius: 10px;
+        }
+    }
+    .secFinal{
+        background-position:center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        width:100%;
+        height: 170px;
     }
 }
+//Cuarta Media Query
 
-@media only screen and (min-width:480px) and (max-width:768px){
-    h1 {
-        font-size: 50px !important;
+@media only screen and (min-width:1440px){
+    .cardCatalogo{
+        width: 450px;
+        height: 350px;
+        transform: scale(1);
+        transition: all 1s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+        .card-img-centerCat{
+            height: 625px;
+        }
     }
-    .card{
-        padding: 20px;
-        margin: 20px 0;
+    .seccionFinal{
+        margin-bottom: 400px;
+        height: 100px;
+        background-size: cover;
+        background-position: center;
+        .secFinal{
+            height: 350px;
+        }
+        
     }
 }
-
-@media only screen and (min-width:768px) and (max-width:1000px) {
-    .card {
-        margin: 50px;
-        height: 800px;
-        margin: 60px;
-        border-radius: 10px;
-    }
-}
-
-@media only screen and (min-width:1000px) and (max-width:1440px){
-    .card {
-        width: 400px;
-        margin: 50px auto;}
-}
-
-

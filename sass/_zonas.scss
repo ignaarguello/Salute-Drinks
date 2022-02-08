@@ -21,11 +21,13 @@ nav {background-color: rgb(27, 26, 26) !important;
 /* Titulo */
 
 #main{
-    h1{  
+    .h1_zonas{  
     @include tituloPrincipal();
-    font-size: 65px;
+    &:hover{
+        color:$colorSecundario;
+    }
 }
-.section1 {
+.section1_zonas {
     margin:100px 0;
 }
 
@@ -34,17 +36,15 @@ nav {background-color: rgb(27, 26, 26) !important;
             text-align: center;
             font-size: 25px;}
 
-.section2{
+.section2_zonas{
     ul {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         color:$colorPrincipal;
-        font-size: 30px;
         font-family:$fontTitulos;
         margin:100px auto;
     & li {
-        padding: 0px 0px;
         list-style: none;
           &:hover{color: $colorSecundario;}
         }
@@ -82,32 +82,39 @@ button a  {
     }
 }
 
-@media only screen and (min-width:320px) and (max-width:1000px) {
+//Primer Media Query
 
-.section2{
+@media only screen and (min-width:320px){
+    //H1
+    .h1_zonas{
+    font-size: 45px;
+} 
+.section2_zonas{
     ul{
-        li{font-size: 20px;
-           padding: 0 3px !important;}
+        font-size: 20px;
+        padding: 8px;
+        li{
+            margin: 0 4px;
+        }
     }
 }
 }
 
-@media only screen and (min-width:600px) and (max-width:900px) {
-
-    .section2{
+@media only screen and (min-width:425px){
+    .section2_zonas{
         ul{
-            li{font-size: 25px;
-               padding: 0 20px !important;}
+            font-size: 28px;
         }
     }
+}
+
+@media only screen and (min-width:1440px){
+    .h1_zonas{
+        font-size:60px;
     }
-
-    @media only screen and (min-width:900px) and (max-width:1440px) {
-
-        .section2{
-            ul{
-                li{font-size: 30px;
-                   padding: 0 70px !important;}
-            }
+    .section2_zonas{
+        ul{
+            font-size: 35px;
         }
-        }
+    }
+}

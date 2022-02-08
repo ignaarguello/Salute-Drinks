@@ -20,8 +20,12 @@ nav {background-color: rgb(27, 26, 26) !important;
 /* Main */
 
 #main{
-    h1 {
+    .tituloTV {
         @include tituloPrincipal();
+        font-size: 60px;
+        &:hover{
+            color:$colorSecundario;
+        }
     }
     .textoPrincipal {
         font-family:$fontSecundaria;
@@ -40,7 +44,7 @@ nav {background-color: rgb(27, 26, 26) !important;
         color:$colorSecundario;
         font-size:$size3;
         text-align: center;
-        margin:120px 0;
+        margin:250px 0;
         font-family:$fontTitulos;
         padding: 0px 50px;
     }
@@ -49,17 +53,19 @@ nav {background-color: rgb(27, 26, 26) !important;
         display: flex;
         justify-content: space-evenly;
         margin-top:50px;
+        margin-bottom: 130px;
         flex-wrap: wrap;
         .texto3 {
         color: rgb(255, 255, 255);
         font-size:$size3;
         font-family:$fontTitulos;
         text-align: center;
-        margin:120px 0;
+        margin:200px 0;
         padding: 0px 100px;
     }
     }
 }
+
 
 /* Footer */
 
@@ -79,7 +85,7 @@ nav {background-color: rgb(27, 26, 26) !important;
         border: none;
         font-size:$size3;
         a{
-        color:$colorPrincipal;
+        color:$colorSecundario;
         &:hover {color:$colorPrincipal}
     }
     .copyright {

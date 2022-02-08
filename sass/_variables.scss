@@ -1,6 +1,7 @@
 //Colores
-$colorPrincipal:rgb(98, 29, 98);
+$colorPrincipal:rgb(212, 73, 205);
 $colorSecundario:rgb(207, 203, 203);
+$backgroundCards:rgb(27, 25, 25);
 
 //Tamaños
 
@@ -19,16 +20,28 @@ $fontTitulos:Amatic SC,cursive;
 @mixin tituloPrincipal {
     text-align: center;
     color:$colorPrincipal;
-    font-size:70px;
     font-family:$fontTitulos;
     margin-top: 150px;}
 
 @mixin tituloSecundario{
     text-align: center;
     color:$colorPrincipal;
-    font-size:55px;
     font-family:$fontTitulos;
     margin-top: 150px;}
+
+@mixin titulo__previoFooter{
+    
+        color:$colorSecundario;
+        text-align: center;
+        margin: 2em 0;
+        font-family: $fontSecundaria;
+        background-color: rgb(19, 18, 18);
+        height: 5em;
+        padding: 25px 0;
+        & a{
+            color:$colorPrincipal;
+        }
+    }
 
 
 //Fin de variables
