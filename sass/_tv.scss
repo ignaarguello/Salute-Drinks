@@ -20,21 +20,26 @@ nav {background-color: rgb(27, 26, 26) !important;
 /* Main */
 
 #main{
-    .tituloTV {
-        @include tituloPrincipal();
+    .contenedor_h1{
+        display: flex;
+        justify-content: center;
+      .tituloTV {
+          @include tituloPrincipal();
         font-size: 60px;
+        width: 100px;
         &:hover{
             color:$colorSecundario;
         }
+    }  
     }
+    
     .textoPrincipal {
-        font-family:$fontSecundaria;
+        font-family:$terceraFont;
         font-size: 25px;
         color:$colorSecundario;
         text-align: center;
         margin:100px 0;
-        color:$colorPrincipal;
-    }
+    }  
     .section1 {
         display: flex;
         justify-content: space-evenly;
@@ -42,10 +47,10 @@ nav {background-color: rgb(27, 26, 26) !important;
         flex-wrap: wrap-reverse;
         .texto2 {
         color:$colorSecundario;
-        font-size:$size3;
+        font-size:20px;
         text-align: center;
         margin:250px 0;
-        font-family:$fontTitulos;
+        font-family:$terceraFont;
         padding: 0px 50px;
     }
     }
@@ -57,11 +62,11 @@ nav {background-color: rgb(27, 26, 26) !important;
         flex-wrap: wrap;
         .texto3 {
         color: rgb(255, 255, 255);
-        font-size:$size3;
-        font-family:$fontTitulos;
+        font-size:20px;
+        font-family:$terceraFont;
         text-align: center;
         margin:200px 0;
-        padding: 0px 100px;
+        padding: 0px 50px;
     }
     }
 }

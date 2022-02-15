@@ -7,14 +7,36 @@ nav {
     .navbar-nav {
         font-family:$fontTitulos;
         font-size: 22px;
+        cursor: pointer;
     }
     .nav-item {
         padding: 0px 10px;
+        cursor: pointer;
+        .nav-link{
+            cursor: pointer;
+            position: relative;
+            &::after{
+                content:"";
+                position: absolute;
+                height: 2px;
+                width: 100%;
+                background-color:$colorPrincipal;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                transform-origin: right;
+                transform: scale(0);
+                transition: transform 0.2s ease-in-out;
+                cursor: pointer;
+                }
+                &:hover::after{
+                    transform-origin: left;
+                    transform: scale(1);
+                    cursor: pointer;
+                }
+            }
+        }
     }
-    .nav-link:hover{
-        color:$colorPrincipal!important;
-    }
-}
 
 
 /* Carousel */
@@ -93,22 +115,21 @@ nav {
     }
     //Cards
     .card{
-        height: 925px;
+        height: 1110px;
         margin: 80px 0px;
         border:none;
-        background-color: $backgroundCards;
-        .card-body{
-            background-color:$backgroundCards;
+        background: black;
+       .card-body{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            
+            background: $backgroundCards;
         }
             .card-title{
                 color:$colorPrincipal;
-                font-family:$fontSecundaria;
-                font-size: 33px;
+                font-family:$terceraFont;
+                font-size: 25px;
                 margin: 25px 0;
                 }
                 .card-text{
@@ -116,13 +137,15 @@ nav {
                 font-family:$fontPrincipal;
                 font-size: 16px;
                 padding-top: 20px;
-                line-height:25px;}
+                line-height:25px;
+            }
             .card-img-top{
                   height: 600px;
-              }
+                }
         .btn{
             margin: 55px 0px;
             width: 200px;
+            background-color:skyblue;
         }
     }
 }
@@ -146,7 +169,7 @@ nav {
     //Cards
     .card {
             border-radius: 10px;
-            background-color: rgba(184, 163, 163, 0.157);
+            background-color:black;
             height: 1100px;
             .card-img-top{
             height: 700px;
@@ -203,11 +226,6 @@ nav {
         justify-content: space-around;
         .card{
             width: 300px;
-            transform: scale(1);
-            transition: all 1.2s ease;
-            &:hover{
-            transform: scale(1.1);
-        }
         .card-img-top{
             height: 600px !important;
         }
@@ -222,10 +240,23 @@ nav {
 
 @media only screen and (min-width:1440px){
     //H1
-    .h1_index{
-        font-size: 75px;
+    .containerH1{
+        display: flex;
+        justify-content: center;
+       .h1_index{
+        font-size: 65px;
+        width: 450px;
         &:hover{
             color:$colorSecundario;
+        }
+    } 
+    }
+    //Titulo2
+    .containerT2{
+        display: flex;
+        justify-content: center;
+        .titulo2{
+            width: 500px;
         }
     }
     //Carousel
@@ -236,11 +267,45 @@ nav {
     .card{
         width: 400px !important;
         height: 75rem !important;
+        background-color: black;
         margin-bottom: 200px;
-        transform: scale(1);
-        transition: all 1.2s ease;
-        &:hover{
-            transform: scale(1.1);
+        .btn{
+            position: relative;
+            letter-spacing: 3px;
+            &::after{
+                content:"";
+                position: absolute;
+                height: 2px;
+                width: 100%;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                background:$colorPrincipal;
+                transform-origin: right;
+                transform: scale(0);
+                transition: transform 0.6s ease-in-out;
+            }
+            &:hover::after{
+                    transform-origin: left;
+                    transform: scale(1);
+                }
+            }
+            .btn{
+            font-family: 'Poppins', sans-serif;
+            position: relative;
+            width: 16rem;
+            font-size: 17px;
+            background-color:black !important;
+            color:$colorPrincipal;
+            /* border:2px rgb(33, 185, 190) solid; */
+            padding: 10px;
+            transform: scale(1);
+            transition: all 1s ease;
+            &:hover{
+                transform: scale(1.2);
+                transition: all 1s ease;
+                /* border: 2.5px rgb(33, 185, 190) dashed; */
+            }
         }
         .card-img-top{
             height: 600px !important;

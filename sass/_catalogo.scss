@@ -15,10 +15,8 @@ nav {background-color: rgb(27, 26, 26) !important;
 
 .nav-link:hover {
     color:$colorPrincipal !important;
-}}
-
-
-
+}
+}
 
 /* MAIN*/
 .h1__catalogo {@include tituloPrincipal();
@@ -135,7 +133,7 @@ nav {background-color: rgb(27, 26, 26) !important;
     .cardCatalogo{
         margin: 70px 0px;
         .card-img-centerCat{
-            height: 600px;
+            height: 700px;
             width: 100%;
         }
         .card-bodyCat{
@@ -203,6 +201,7 @@ nav {background-color: rgb(27, 26, 26) !important;
         transition: all 1s ease;
         &:hover{
             transform: scale(1.1);
+            transition: all 1s ease;
         }
         .card-img-centerCat{
             height: 625px;
